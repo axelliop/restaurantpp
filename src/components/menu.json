@@ -1,0 +1,58 @@
+[
+    {
+      "nombre": "hamburguesas con papas simple",
+      "bebida": "coca cola",
+      "valor": 2500,
+      "descripcion": "simple pero clasica, satisfaccion garantizada",
+      "id": 1
+    },
+    {
+        "nombre": "hamburguesas con papas simple",
+        "bebida": "coca cola",
+        "valor": 2500,
+        "descripcion": "simple pero clasica, satisfaccion garantizada",
+        "id": 2
+    },
+    {
+        "nombre": "hamburguesas con papas simple",
+        "bebida": "coca cola",
+        "valor": 2500,
+        "descripcion": "simple pero clasica, satisfaccion garantizada",
+        "id": 3
+    },
+    {
+        "nombre": "hamburguesas con papas simple",
+        "bebida": "coca cola",
+        "valor": 2500,
+        "descripcion": "simple pero clasica, satisfaccion garantizada",
+        "id": 4
+    },
+    {
+        "nombre": "hamburguesas con papas simple",
+        "bebida": "coca cola",
+        "valor": 2500,
+        "descripcion": "simple pero clasica, satisfaccion garantizada",
+        "id": 5
+    },
+    {
+        "nombre": "hamburguesas con papas simple",
+        "bebida": "coca cola",
+        "valor": 2500,
+        "descripcion": "simple pero clasica, satisfaccion garantizada",
+        "id": 6
+    },
+    {
+        "nombre": "hamburguesas con papas simple",
+        "bebida": "coca cola",
+        "valor": 2500,
+        "descripcion": "simple pero clasica, satisfaccion garantizada",
+        "id": 7
+    },
+    {
+        "nombre": "hamburguesas con papas simple",
+        "bebida": "coca cola",
+        "valor": 2500,
+        "descripcion": "simple pero clasica, satisfaccion garantizada",
+        "id": 8
+    }
+]
