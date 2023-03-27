@@ -37,6 +37,9 @@ const [product, setProduct] = useState({})
 useEffect(() => { 
     
 
+
+
+  
 getProduct()
 
 }, [])
@@ -51,6 +54,10 @@ const getProduct = () => {
 
     })
 }
+
+
+
+
 
 
   
