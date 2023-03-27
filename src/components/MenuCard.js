@@ -1,19 +1,56 @@
-import React, { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
 import { collection, doc, getDoc, getFirestore } from 'firebase/firestore'
 
-import { Link } from 'react-router-dom'
-import axios from 'axios';
-import menu from './menu.json'
+import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
 import styles from './MenuCard.module.css'
 
 const MenuCard = ({item}) => {
 
 
+// Import the functions you need from the SDKs you need
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBJp-pLH2rueNZ2KN1W5dXsjCqX-52Dfr4",
+  authDomain: "restaurantpp2-f247e.firebaseapp.com",
+  projectId: "restaurantpp2-f247e",
+  storageBucket: "restaurantpp2-f247e.appspot.com",
+  messagingSenderId: "1030418475225",
+  appId: "1:1030418475225:web:de12f2b94a238ba16736c8",
+  measurementId: "G-TZ4Q16C241"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const [product, setProduct] = useState({})
 
 
 
+useEffect(() => { 
+    
 
+getProduct()
 
+}, [])
+
+const getProduct = () => {
+    const db = getFirestore()
+    const productsCollection = collection(db, 'menus')
+    const docRef = doc(productsCollection)
+    getDoc( docRef ).then(res => {
+        console.log(res.data() )
+        setProduct(res.data())
+
+    })
+}
 
 
   
